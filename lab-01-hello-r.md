@@ -15,7 +15,7 @@ library(datasauRus)
 ### Exercise 1
 
 This data set has 1846 rows and 3 columns. The variables are 1) the data
-set, 2) the x values, and 3) the y values.blah blah
+set, 2) the x values, and 3) the y values.
 
 ### Exercise 2
 
@@ -46,6 +46,8 @@ dino_data %>%
     ##         r
     ##     <dbl>
     ## 1 -0.0645
+
+The correlation between x and y is -.0645
 
 ### Exercise 3
 

@@ -23,6 +23,7 @@ This data set has 1846 rows and 3 columns. The variables are 1) the data set, 2)
 The answers for this Exercise are given for you below.
 But you should clean up some of the narrative so that it only includes what you want to turn in.
 
+
 First let's plot the data in the dino dataset:
 
 ```{r plot-dino, fig.height=3, fig.width=6}
@@ -39,6 +40,8 @@ And next calculate the correlation between `x` and `y` in this dataset:
 dino_data %>%
   summarize(r = cor(x, y))
 ```
+
+The correlation between x and y is -.0645
 
 ### Exercise 3
 
