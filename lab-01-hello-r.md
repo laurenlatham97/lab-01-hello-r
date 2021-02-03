@@ -14,7 +14,8 @@ library(datasauRus)
 
 ### Exercise 1
 
-Remove this text, and add your answer for Exercise 1 here.
+This data set has 1846 rows and 3 columns. The variables are 1) the data
+set, 2) the x values, and 3) the y values.blah blah
 
 ### Exercise 2
 
