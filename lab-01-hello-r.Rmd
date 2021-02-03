@@ -2,7 +2,11 @@
 title: "Lab 01 - Hello R"
 author: "laurenlatham97"
 date: "2/2/21"
-output: github_document
+output: 
+  html_document: 
+    fig_width: 10
+    fig_height: 10
+    theme: spacelab
 ---
 
 ## Load packages and data
@@ -41,7 +45,7 @@ The correlation between x and y is -.0645
 
 ### Exercise 3
 
-```{r plot-star, fig.height=3, fig.width=6}
+```{r plot-star, fig.height=6, fig.width=10}
 star_data <- datasaurus_dozen %>%
   filter(dataset == "star")
 
