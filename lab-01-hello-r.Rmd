@@ -1,7 +1,7 @@
 ---
 title: "Lab 01 - Hello R"
-author: "Insert your name here"
-date: "Insert date here"
+author: "laurenlatham97"
+date: "2/2/21"
 output: github_document
 ---
 
