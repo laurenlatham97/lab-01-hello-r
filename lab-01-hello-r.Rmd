@@ -20,11 +20,7 @@ This data set has 1846 rows and 3 columns. The variables are 1) the data set, 2)
 
 ### Exercise 2
 
-The answers for this Exercise are given for you below.
-But you should clean up some of the narrative so that it only includes what you want to turn in.
-
-
-First let's plot the data in the dino dataset:
+Below is the dino data plotted with its correlation coefficient. 
 
 ```{r plot-dino, fig.height=3, fig.width=6}
 dino_data <- datasaurus_dozen %>%
@@ -80,5 +76,17 @@ circle_data %>%
 
 ### Exercise 5
 
-Add code and narrative as needed.
-To add R chunks either type out the backticks, curly braces, and the letter `r` or use the Insert chunk button above, green C+.
+Below are plots of all of the data sets with correlation coefficients. 
+
+```{r}
+ggplot(datasaurus_dozen, aes(x = x, y = y, color = dataset))+
+  geom_point()+
+  facet_wrap(~ dataset, ncol = 3) +
+  theme(legend.position = "none")
+
+datasaurus_dozen %>%
+  group_by(dataset) %>%
+  summarize(r = cor(x, y)) %>%
+  print(13)
+```
+
